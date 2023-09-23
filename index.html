@@ -1,75 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Page Title</title>
-    <style>
-        /* Gradient background */
-        body { 
-            background: linear-gradient(to bottom, #e29b7a, #c77d48);
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Container for rectangles */
-        .rectangle-container {
-            display: flex;
-            flex-direction: row; /* Arrange rectangles vertically */
-            align-items: flex-start; /* Align rectangles to the left */
-        }
-
-        /* Style for each rectangle */
-        .rectangle {
-            width: 150px; /* Adjust the width as needed */
-            height: 300px; /* Adjust the height as needed */
-            background-color: rgb(212, 207, 207);
-            margin: 20px; /* Add margin for spacing between rectangles */
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-        }
-        .rectangle:hover {
-            background-color: rgba(199, 114, 40, 0.59); /* Change to the desired hover color */
-            color:rgba(255, 255, 255, 0.757);
-        }
-        .seperate-container{
-            display : block;
-            flex-direction: column;
-            align-items: center;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Darshan</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class = "seperate-container">
-    <h1>Welcome to Our Page</h1>
-    <h2>Tourism</h2>
-</div>
-    <!-- Container for rectangles -->
-    <div class="rectangle-container">
-        <!-- Rectangle 1 -->
-        <div class="rectangle">
-            <h2>Rectangle 1</h2>
-            <p>Text for Rectangle 1 goes here.</p>
-        </div>
-
-        <!-- Rectangle 2 -->
-        <div class="rectangle">
-            <h2>Rectangle 2</h2>
-            <p>Text for Rectangle 2 goes here.</p>
-        </div>
-
-        <!-- Rectangle 3 -->
-        <div class="rectangle">
-            <h2>Rectangle 3</h2>
-            <p>Text for Rectangle 3 goes here.</p>
-        </div>
-
-        <!-- Rectangle 4 -->
-        <div class="rectangle">
-            <h2>Rectangle 4</h2>
-            <p>Text for Rectangle 4 goes here.</p>
+    <div class="main-content">
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <button class="login-button">Login</button>
+        </nav>
+        <div class="welcome-text">
+            <div id="welcome">Welcome to Bharat Darshan</div>
+            <div id="short-desc">"It's your gateway to the enchanting world of India's rich cultural tapestry. Immerse yourself in a land where ancient traditions coexist with modern marvels, where vibrant festivals light up the sky, and where every corner tells a story of history, art, and diversity. Explore our virtual treasures, from iconic landmarks to hidden gems, as we unveil the timeless beauty and traditions that define the heart and soul of India"</div>
         </div>
     </div>
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or queries, please feel free to get in touch with us.</p>
+        
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/yourpage" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/yourpage" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/yourpage" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <!-- index.html and login.html -->
+    <script src="script.js"></script>
+
 </body>
 </html>

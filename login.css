@@ -1,0 +1,102 @@
+/* login.css */
+
+/* Reset some default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Apply a background image and styling to the body */
+body {
+    background: rgba(255, 255, 255, 0.7) url('BG5.jpg') no-repeat; /* Set the background to a semi-transparent white with the image as a background */
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif; /* Correct the font family */
+}
+
+/* Style the container */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    backdrop-filter: blur(10px); /* Reduce the blur */
+    border: 2px solid rgba(0, 0, 0, .2);
+    width: 350px; /* Slightly reduce the container width */
+    padding: 20px; /* Increase padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a box shadow */
+}
+
+.container h1 {
+    margin: 10px 0;
+    font-size: 24px; /* Increase font size */
+    color: #333; /* Darken the text color */
+}
+
+.input {
+    width: 100%;
+}
+
+.input input {
+    padding: 10px; /* Increase padding */
+    width: 100%;
+    margin: 10px 0; /* Adjust margin */
+    border: 2px solid #ccc; /* Use a lighter border color */
+    border-radius: 20px;
+    font-size: 18px; /* Slightly reduce font size */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    color: #333; /* Darken text color */
+}
+
+.input input::placeholder {
+    color: #777; /* Lighten placeholder text color */
+}
+
+.login-btn {
+    padding: 10px; /* Increase padding */
+    width: 100%;
+    border-radius: 20px;
+    border: none; /* Remove border */
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px; /* Adjust margin */
+    background-color: #333; /* Change button color */
+    color: #fff; /* Light text color on the button */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+.help {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust spacing */
+}
+
+#rmbr-me {
+    font-size: 18px; /* Slightly reduce font size */
+    color: #333; /* Darken text color */
+}
+
+.help a {
+    font-size: 18px; /* Slightly reduce font size */
+    color: #333; /* Darken text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.register {
+    color: #333; /* Darken text color */
+    font-size: 20px;
+    margin: 20px 0;
+    text-decoration: none;
+}

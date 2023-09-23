@@ -1,0 +1,56 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('taj mahal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:  rgba(0, 0, 0, 0.8); 
+    pointer-events: none;
+}
+.mission{
+    position: relative;
+    z-index: 1;
+    margin-left: 10px;
+}
+.history{
+    position: relative;
+    z-index: 1;
+    margin-left: 10px;
+}
+.commitment{
+    position: relative;
+    z-index: 1;
+    margin-left: 10px;
+}
+.features{
+    position: relative;
+    z-index: 1;
+    margin-left: 10px;
+}
+ul {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+}
+/* Hide the scrollbar track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Hide the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
