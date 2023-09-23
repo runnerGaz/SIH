@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Page Title</title>
+    <style>
+        /* Gradient background */
+        body { 
+            background: linear-gradient(to bottom, #e29b7a, #c77d48);
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container for rectangles */
+        .rectangle-container {
+            display: flex;
+            flex-direction: row; /* Arrange rectangles vertically */
+            align-items: flex-start; /* Align rectangles to the left */
+        }
+
+        /* Style for each rectangle */
+        .rectangle {
+            width: 150px; /* Adjust the width as needed */
+            height: 300px; /* Adjust the height as needed */
+            background-color: rgb(212, 207, 207);
+            margin: 20px; /* Add margin for spacing between rectangles */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .rectangle:hover {
+            background-color: rgba(199, 114, 40, 0.59); /* Change to the desired hover color */
+            color:rgba(255, 255, 255, 0.757);
+        }
+        .seperate-container{
+            display : block;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class = "seperate-container">
+    <h1>Welcome to Our Page</h1>
+    <h2>Tourism</h2>
+</div>
+    <!-- Container for rectangles -->
+    <div class="rectangle-container">
+        <!-- Rectangle 1 -->
+        <div class="rectangle">
+            <h2>Rectangle 1</h2>
+            <p>Text for Rectangle 1 goes here.</p>
+        </div>
+
+        <!-- Rectangle 2 -->
+        <div class="rectangle">
+            <h2>Rectangle 2</h2>
+            <p>Text for Rectangle 2 goes here.</p>
+        </div>
+
+        <!-- Rectangle 3 -->
+        <div class="rectangle">
+            <h2>Rectangle 3</h2>
+            <p>Text for Rectangle 3 goes here.</p>
+        </div>
+
+        <!-- Rectangle 4 -->
+        <div class="rectangle">
+            <h2>Rectangle 4</h2>
+            <p>Text for Rectangle 4 goes here.</p>
+        </div>
+    </div>
+</body>
+</html>
