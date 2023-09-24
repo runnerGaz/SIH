@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+               body {
             height: 100vh;
             width: 100vw;
             margin: 0;
@@ -100,41 +100,126 @@
             width: 100%;
             margin-bottom: 15%;
         }
+
+        /* Responsive design */
+        @media (max-width: 440px) {
+            body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Dark background color */
+            font-family: 'Droid Serif', serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2% 0;
+            background-color: rgba(147, 80, 39, 0.871);
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Center align rectangles horizontally */
+            align-items: center; /* Center align rectangles vertically */
+            flex-wrap: wrap; /* Allow rectangles to wrap to the next row */
+            padding: 3% 0;
+            z-index: 3;
+        }
+
+        .rectangle {
+            width: 30%; /* Adjust width as needed */
+            min-width: 250px; /* Minimum width for responsiveness */
+            margin: 2% 2.5%;
+            padding: 3% 2%;
+            background-color: rgba(147, 80, 39, 0.871);
+            text-align: center;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 10px; /* Rounded corners */
+            color: white;
+            border: 1.5px dotted #e3e0e0;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        .rectangle:hover {
+            background-color: rgb(222, 214, 207);
+            color: #181818; /* Dark text color on hover */
+        }
+
+        #top_head {
+            text-align: center;
+            padding: 2% 0;
+            background-color: rgba(147, 80, 39, 0.871);
+            color: white;
+            position: relative;
+            z-index: 4;
+            font-size: 2rem; /* Increase font size */
+        }
+
+        #second_head {
+            text-align: center;
+            color: white;
+            position: relative;
+            font-size: 1.5rem; /* Increase font size */
+            margin-top: 1rem; /* Add spacing */
+        }
+
+        /* Create a pseudo-element for the blur effect */
+        body::before {
+            content: "";
+            position: fixed; /* Fixed background image */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("https://images.unsplash.com/photo-1562439427-b53f43a453bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+        }
+
+        /* Add scrolling effect */
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1 class="custom_head">OUR SERVICES</h1>
-        <h2 class="custom_head">What we do</h2>
+        <h1 id="top_head">OUR SERVICES</h1>
+        <h2 id="second_head">What we do</h2>
     </div>
     <div class="container">
         <a class="rectangle" href="https://www.heritagehotelsofindia.com/" target="_blank">
-            <h2>Heritage Accomodations</h2>
+            <h2>Heritage Accommodations</h2>
             <ul>
-               <li>Luxury Amidst Heritage</li>
-               <li>Luxury Amidst</li>
+                <li>Luxury Amidst Heritage</li>
+                <li>Luxury Amidst</li>
             </ul>
         </a>
-        
-      <a class = "rectangle" href="https://www.tourmyindia.com/packages-tour-india/cultural-tour-packages/" target="_blank">
+        <a class="rectangle" href="https://www.tourmyindia.com/packages-tour-india/cultural-tour-packages/" target="_blank">
             <h2>Guided Cultural Tours</h2>
             <ul>
-               <li>Experience the Legacy</li>
-               <li>Historial Insights</li>
+                <li>Experience the Legacy</li>
+                <li>Historical Insights</li>
             </ul>
-            </a>  
+        </a>
         <a class="rectangle" href="https://www.cntraveler.com/story/foodies-tour-india-from-mumbai-to-maheshwar" target="_blank">
             <h2>Culinary Adventures</h2>
             <ul>
-               <li>Flavours of India</li>
-               <li>Cooking Classes</li>
-            </ul>         
+                <li>Flavors of India</li>
+                <li>Cooking Classes</li>
+            </ul>
         </a>
         <a class="rectangle" href="https://www.tourmyindia.com/blog/top-cultural-festivals-india/" target="_blank">
             <h2>Cultural Performances</h2>
             <ul>
-               <li>Folk Tales</li>
-               <li>Entertainment</li>
+                <li>Folk Tales</li>
+                <li>Entertainment</li>
             </ul>
         </a>
     </div>
