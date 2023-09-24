@@ -11,7 +11,7 @@
 
 /* Apply a background image and styling to the body */
 body {
-    background: rgba(255, 255, 255, 0.7) url('BG5.jpg') no-repeat; /* Set the background to a semi-transparent white with the image as a background */
+    background: rgba(255, 255, 255, 0.7) url('https://cdn.pixabay.com/photo/2017/12/29/10/55/hawamahel-3047281_1280.jpg') no-repeat; /* Set the background to a semi-transparent white with the image as a background */
     background-position: center;
     background-size: cover;
     min-height: 100vh;
@@ -23,9 +23,9 @@ body {
 
 /* Style the container */
 .container {
-    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.192); /* Add a semi-transparent white background */
     backdrop-filter: blur(10px); /* Reduce the blur */
-    border: 2px solid rgba(0, 0, 0, .2);
+    border: 2px solid rgba(221, 221, 221, 0.198);
     width: 350px; /* Slightly reduce the container width */
     padding: 20px; /* Increase padding for better spacing */
     display: flex;
@@ -51,10 +51,10 @@ body {
     padding: 10px; /* Increase padding */
     width: 100%;
     margin: 10px 0; /* Adjust margin */
-    border: 2px solid #ccc; /* Use a lighter border color */
+    border: 2px solid #be7d0d77; /* Use a lighter border color */
     border-radius: 20px;
     font-size: 18px; /* Slightly reduce font size */
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.82); /* Semi-transparent white background */
     color: #333; /* Darken text color */
 }
 
@@ -84,13 +84,13 @@ body {
 }
 
 #rmbr-me {
-    font-size: 18px; /* Slightly reduce font size */
-    color: #333; /* Darken text color */
+    font-size: 20px; /* Slightly reduce font size */
+    color: #ffffff; /* Darken text color */
 }
 
 .help a {
-    font-size: 18px; /* Slightly reduce font size */
-    color: #333; /* Darken text color */
+    font-size: 20px; /* Slightly reduce font size */
+    color: #ffffff; /* Darken text color */
     text-decoration: none; /* Remove underline */
 }
 
@@ -99,4 +99,5 @@ body {
     font-size: 20px;
     margin: 20px 0;
     text-decoration: none;
+    font-weight: bold;
 }
