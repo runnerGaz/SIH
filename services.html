@@ -1,88 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>OUR SERVICES</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        /* Gradient background */
-        body { 
-            background: linear-gradient(to bottom, #e29b7a, #c77d48);
+        body {
             height: 100vh;
+            width: 100vw;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
+            background-image: url("https://images.unsplash.com/photo-1562439427-b53f43a453bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
         }
 
-        .seperate-container{
+        .header {
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
             align-items: center;
-            height: 22vh;
-            width:100vw;
-            margin-top: 5vh;
-            margin-bottom:10vh;
-            border: 1px solid #ccc;
+            width: 100vw;
+            height: 25vh;
+            margin: 0 0 0 0;
+            border: 1px solid black;
+            padding-top: 2%;
+            color: rgb(255, 255, 255);
+            z-index: 2;
+            position: relative;
         }
 
-        /* Container for rectangles */
-        .rectangle-container {
+        .container {
             display: flex;
-            flex-direction: row; /* Arrange rectangles vertically */
-            align-items: flex-start; /*Align rectangles to the left */
-            width :100vw;
-            height: 63vh; 
-            padding-left: 10%;
-            padding-right: 10%;
-            border: 1px solid #ccc;
-            
+            flex-direction: row;
+            margin-top: 5vh;
+            padding: 3% 10%;
+            width: 100vw;
+            height: 50vh;
+            border: 1px solid black;
+            z-index: 3;
+            position: relative;
         }
 
-        /* Style for each rectangle  */
-            .rectangle {
-            width: 15%; /* Adjust the width as needed*/
-             height: 25%; /*Adjust the height as needed */
-             background-color: rgb(212, 207, 207);
-             margin: 1% 3%; /*Add margin for spacing between rectangles*/
-             padding: 0%;
+        .rectangle {
+         display: flex;
+         flex-direction: column ;
+         align-items: flex-start;
+            width: 15%;
+            height: 90%;
+            background-color: rgba(147, 80, 39, 0.871);
+            margin: 2% 2.5%;
+            padding: 0%;
             text-align: center;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            border-radius: 1%;
-        }
-        .rectangle:hover {
-            background-color: rgba(199, 114, 40, 0.59); /* Change to the desired hover color */
-            color:rgba(255, 255, 255, 0.757);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 10%;
+            color: white;
+             border: 1.5px dotted #e3e0e0; 
+   
         }
 
+        /* Create a pseudo-element for the blur effect */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(58, 49, 36, 0.133);
+             /* Adjust the blur intensity as needed */
+            z-index: 1;
+        }
+
+        .rectangle:hover {
+            background-color: rgb(222, 214, 207); /* Change to the desired hover color */
+            color:rgb(24, 24, 24);
+        }
+
+        .custom_head {
+            background-color: rgba(147, 80, 39, 0.871);
+            position: relative;
+            z-index: 4;
+            font-family:'Droid serif', serif;
+        }
+        
+
+        a {
+            text-decoration: none; /* Remove underlines */
+            color: inherit; /* Inherit text color */
+        }
+        ul{
+            padding-left: 20%;
+        }
+        li{
+            list-style-type: disc;
+            padding-left: 1%;
+            width: 100%;
+            margin-bottom: 15%;
+        }
     </style>
 </head>
 <body>
-<div class = "seperate-container">
-    <h1>OUR SERVICES</h1>
-    <h2>Tourism</h2>
-</div>
-    <!-- Container for rectangles -->
-    <div class="rectangle-container">
-        <!-- Rectangle 1 -->
-        <div class="rectangle">
-            <h2>Rectangle 1</h2>
-            <p>Text for Rectangle 1 goes here.</p>
-        </div>
-
-        <!-- Rectangle 2 -->
-        <div class="rectangle">
-            <h2>Rectangle 2</h2>
-            <p>Text for Rectangle 2 goes here.</p>
-        </div>
-
-        <!-- Rectangle 3 -->
-        <div class="rectangle">
-            <h2>Rectangle 3</h2>
-            <p>Text for Rectangle 3 goes here.</p>
-        </div>
-
-        <!-- Rectangle 4 -->
-        <div class="rectangle">
-            <h2>Rectangle 4</h2>
-            <p>Text for Rectangle 4 goes here.</p>
-        </div>
+    <div class="header">
+        <h1 class="custom_head">OUR SERVICES</h1>
+        <h2 class="custom_head">What we do</h2>
+    </div>
+    <div class="container">
+        <a class="rectangle" href="https://www.heritagehotelsofindia.com/" target="_blank">
+            <h2>Heritage Accomodations</h2>
+            <ul>
+               <li>Luxury Amidst Heritage</li>
+               <li>Luxury Amidst</li>
+            </ul>
+        </a>
+        
+      <a class = "rectangle" href="https://www.tourmyindia.com/packages-tour-india/cultural-tour-packages/" target="_blank">
+            <h2>Guided Cultural Tours</h2>
+            <ul>
+               <li>Experience the Legacy</li>
+               <li>Historial Insights</li>
+            </ul>
+            </a>  
+        <a class="rectangle" href="https://www.cntraveler.com/story/foodies-tour-india-from-mumbai-to-maheshwar" target="_blank">
+            <h2>Culinary Adventures</h2>
+            <ul>
+               <li>Flavours of India</li>
+               <li>Cooking Classes</li>
+            </ul>         
+        </a>
+        <a class="rectangle" href="https://www.tourmyindia.com/blog/top-cultural-festivals-india/" target="_blank">
+            <h2>Cultural Performances</h2>
+            <ul>
+               <li>Folk Tales</li>
+               <li>Entertainment</li>
+            </ul>
+        </a>
     </div>
 </body>
 </html>
