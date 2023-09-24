@@ -10,18 +10,19 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Style the main navigation */
-nav {
-    background: transparent;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-}
+
+
+.sticky-nav {
+        background-color: #000; /* Black background color */
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+    }
 
 .logo img {
     height: 35px;
@@ -230,3 +231,49 @@ nav {
 
     /* Adjust other styles as needed for smaller screens */
 }
+
+.about-section {
+    background-color: #070606;
+    color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.mission,
+.history,
+.commitment,
+.features {
+    margin-bottom: 30px;
+}
+
+.mission h3,
+.history h3,
+.commitment h3,
+.features h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mission p,
+.history p,
+.commitment p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.features li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Media queries if needed for responsiveness */
